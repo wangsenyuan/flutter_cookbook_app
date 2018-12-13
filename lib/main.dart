@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_cookbook_app/MyCustomForm.dart';
 import 'package:flutter_cookbook_app/OrientationDemo.dart';
 import 'package:flutter_cookbook_app/SnackBarDemo.dart';
 import 'package:flutter_cookbook_app/TabBarDemo.dart';
@@ -57,6 +58,7 @@ class _MyHomePageState extends State<MyHomePage> {
     "Orientation",
     "Theme",
     "Tabs",
+    "Form Validation"
   ];
 
   final _examples = [
@@ -66,6 +68,7 @@ class _MyHomePageState extends State<MyHomePage> {
     () => OrientationDemo(),
     () => ThemeDemo(),
     () => TabBarDemo(),
+    () => FormDemo(),
   ];
 
   void _goToExample(BuildContext context, int index) {
