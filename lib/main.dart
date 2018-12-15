@@ -1,8 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_cookbook_app/DismissDemo.dart';
+import 'package:flutter_cookbook_app/FocusTextDemo.dart';
+import 'package:flutter_cookbook_app/GestureDemo.dart';
+import 'package:flutter_cookbook_app/ImageDemo.dart';
+import 'package:flutter_cookbook_app/InkWellDemo.dart';
 import 'package:flutter_cookbook_app/MyCustomForm.dart';
 import 'package:flutter_cookbook_app/OrientationDemo.dart';
+import 'package:flutter_cookbook_app/RetrieveTextContentDemo.dart';
 import 'package:flutter_cookbook_app/SnackBarDemo.dart';
 import 'package:flutter_cookbook_app/TabBarDemo.dart';
+import 'package:flutter_cookbook_app/TextChangeDemo.dart';
 import 'package:flutter_cookbook_app/ThemeDemo.dart';
 import 'package:flutter_cookbook_app/animation_example.dart';
 import 'package:flutter_cookbook_app/drawer_example.dart';
@@ -58,7 +65,14 @@ class _MyHomePageState extends State<MyHomePage> {
     "Orientation",
     "Theme",
     "Tabs",
-    "Form Validation"
+    "Form Validation",
+    "Focus Text",
+    "Text Change Demo",
+    "Retrieve Text Content",
+    "Ink Well Demo",
+    "Gesture Demo",
+    "Dismiss Demo",
+    "Image Demo",
   ];
 
   final _examples = [
@@ -69,6 +83,13 @@ class _MyHomePageState extends State<MyHomePage> {
     () => ThemeDemo(),
     () => TabBarDemo(),
     () => FormDemo(),
+    () => FocusTextDemo(),
+    () => TextChangeDemo(),
+    () => RetrieveTextContentDemo(),
+    () => InkWellDemo(),
+    () => GestureDemo(),
+    () => DismissDemo(),
+    () => ImageDemo(),
   ];
 
   void _goToExample(BuildContext context, int index) {
