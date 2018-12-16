@@ -15,6 +15,7 @@ import 'package:flutter_cookbook_app/ThemeDemo.dart';
 import 'package:flutter_cookbook_app/animation_example.dart';
 import 'package:flutter_cookbook_app/drawer_example.dart';
 import 'package:flutter_cookbook_app/grid_demo.dart';
+import 'package:flutter_cookbook_app/hero_demo.dart';
 import 'package:flutter_cookbook_app/horizontal_list.dart';
 import 'package:flutter_cookbook_app/mixed_list.dart';
 
@@ -80,7 +81,8 @@ class _MyHomePageState extends State<MyHomePage> {
     "Fade In Image",
     "Horizontal List",
     "Grid Demo",
-    "Mixed List"
+    "Mixed List",
+    "Hero Demo",
   ];
 
   final _examples = [
@@ -102,6 +104,7 @@ class _MyHomePageState extends State<MyHomePage> {
     () => HorizontalListDemo(),
     () => GridDemo(),
     () => MixedListDemo(),
+    () => HeroMainScreen(),
   ];
 
   void _goToExample(BuildContext context, int index) {
