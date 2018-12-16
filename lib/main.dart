@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_cookbook_app/DismissDemo.dart';
+import 'package:flutter_cookbook_app/FadeInImageDemo.dart';
 import 'package:flutter_cookbook_app/FocusTextDemo.dart';
 import 'package:flutter_cookbook_app/GestureDemo.dart';
 import 'package:flutter_cookbook_app/ImageDemo.dart';
@@ -13,6 +14,9 @@ import 'package:flutter_cookbook_app/TextChangeDemo.dart';
 import 'package:flutter_cookbook_app/ThemeDemo.dart';
 import 'package:flutter_cookbook_app/animation_example.dart';
 import 'package:flutter_cookbook_app/drawer_example.dart';
+import 'package:flutter_cookbook_app/grid_demo.dart';
+import 'package:flutter_cookbook_app/horizontal_list.dart';
+import 'package:flutter_cookbook_app/mixed_list.dart';
 
 void main() => runApp(MyApp());
 
@@ -73,6 +77,10 @@ class _MyHomePageState extends State<MyHomePage> {
     "Gesture Demo",
     "Dismiss Demo",
     "Image Demo",
+    "Fade In Image",
+    "Horizontal List",
+    "Grid Demo",
+    "Mixed List"
   ];
 
   final _examples = [
@@ -90,6 +98,10 @@ class _MyHomePageState extends State<MyHomePage> {
     () => GestureDemo(),
     () => DismissDemo(),
     () => ImageDemo(),
+    () => FadeInImageDemo(),
+    () => HorizontalListDemo(),
+    () => GridDemo(),
+    () => MixedListDemo(),
   ];
 
   void _goToExample(BuildContext context, int index) {
