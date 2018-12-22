@@ -17,7 +17,11 @@ import 'package:flutter_cookbook_app/drawer_example.dart';
 import 'package:flutter_cookbook_app/grid_demo.dart';
 import 'package:flutter_cookbook_app/hero_demo.dart';
 import 'package:flutter_cookbook_app/horizontal_list.dart';
+import 'package:flutter_cookbook_app/http_demo.dart';
+import 'package:flutter_cookbook_app/http_photos.dart';
 import 'package:flutter_cookbook_app/mixed_list.dart';
+import 'package:flutter_cookbook_app/pass_data_when_navigation.dart';
+import 'package:flutter_cookbook_app/passing_data_when_push.dart';
 
 void main() => runApp(MyApp());
 
@@ -83,6 +87,10 @@ class _MyHomePageState extends State<MyHomePage> {
     "Grid Demo",
     "Mixed List",
     "Hero Demo",
+    "Passing Data when pop",
+    "Passing Data when push",
+    "Http Demo",
+    "Http Photos"
   ];
 
   final _examples = [
@@ -105,6 +113,10 @@ class _MyHomePageState extends State<MyHomePage> {
     () => GridDemo(),
     () => MixedListDemo(),
     () => HeroMainScreen(),
+    () => PassDataDemo(),
+    () => TodosScreen(),
+    () => HttpDemo(),
+    () => HttpPhotos(),
   ];
 
   void _goToExample(BuildContext context, int index) {
