@@ -22,6 +22,8 @@ import 'package:flutter_cookbook_app/http_photos.dart';
 import 'package:flutter_cookbook_app/mixed_list.dart';
 import 'package:flutter_cookbook_app/pass_data_when_navigation.dart';
 import 'package:flutter_cookbook_app/passing_data_when_push.dart';
+import 'package:flutter_cookbook_app/read_write_file_demo.dart';
+import 'package:flutter_cookbook_app/web_sockets_demo.dart';
 
 void main() => runApp(MyApp());
 
@@ -90,7 +92,9 @@ class _MyHomePageState extends State<MyHomePage> {
     "Passing Data when pop",
     "Passing Data when push",
     "Http Demo",
-    "Http Photos"
+    "Http Photos",
+    "Web Sockets Demo",
+    "Read & Write File",
   ];
 
   final _examples = [
@@ -117,6 +121,8 @@ class _MyHomePageState extends State<MyHomePage> {
     () => TodosScreen(),
     () => HttpDemo(),
     () => HttpPhotos(),
+    () => WebSocketDemo(),
+    () => ReadWriteFileDemo(),
   ];
 
   void _goToExample(BuildContext context, int index) {
