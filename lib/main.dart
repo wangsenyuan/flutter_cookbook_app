@@ -14,6 +14,8 @@ import 'package:flutter_cookbook_app/TextChangeDemo.dart';
 import 'package:flutter_cookbook_app/ThemeDemo.dart';
 import 'package:flutter_cookbook_app/animation_example.dart';
 import 'package:flutter_cookbook_app/drawer_example.dart';
+import 'package:flutter_cookbook_app/example/animation/animation_demo.dart';
+import 'package:flutter_cookbook_app/example/lakes.dart';
 import 'package:flutter_cookbook_app/grid_demo.dart';
 import 'package:flutter_cookbook_app/hero_demo.dart';
 import 'package:flutter_cookbook_app/horizontal_list.dart';
@@ -95,6 +97,8 @@ class _MyHomePageState extends State<MyHomePage> {
     "Http Photos",
     "Web Sockets Demo",
     "Read & Write File",
+    "Lake",
+    "Animation Demo",
   ];
 
   final _examples = [
@@ -123,6 +127,8 @@ class _MyHomePageState extends State<MyHomePage> {
     () => HttpPhotos(),
     () => WebSocketDemo(),
     () => ReadWriteFileDemo(),
+    () => LakeApp(),
+    () => LogoApp(),
   ];
 
   void _goToExample(BuildContext context, int index) {
